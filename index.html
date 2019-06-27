@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comic Characters Dashboard</title>
+    
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/dc.min.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+    
+    <script type="text/javascript" src="static/js/d3.min.js"></script>
+    <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
+    <script type="text/javascript" src="static/js/dc.min.js"></script>
+    <script type="text/javascript" src="static/js/queue.min.js"></script>
+    <script type="text/javascript" src="static/js/graph.js"></script>
+    
+</head>
+<body>
+   <header class="container-fluid">
+    <div class="container-bgimg bgimg">
+    <h1>Comic Characters Dashboard</h1>
+    
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+   
+    </p> 
+    </div>
+    </header>
+    
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-4" id="percent-male">
+            </div>
+            <div class="col-4" id="percent-female">
+            </div>
+            <div class="col-4" id="percent-other">
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6" id="alignment">
+            </div>
+            <div class="col-6" id="appearance">
+            </div>
+        </div>
+    </div>
+    
+    
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-6" id="eye-color">
+            </div>
+            <div class="col-6" id="identity">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6" id="alive">
+                
+            </div>
+            <div class="col-6" id ="">
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- 
+    <section id="listinginfo" class="d-none d-lg-block">
+        <div class="content">
+
+            <!-- Data sets HERE -->
+     <!--       <div class="container-fluid">
+                <div class="modal" id="charListing">
+                    <h6>Full Listing of Characters</h6>
+                    <p>This is a full list of characters mentioned within the first THREE books of the Lord of the Rings with some crossover of individuals from the Hobbit as well. This does not include the gods or first race figures from The Silmarillion.</p>
+                </div>
+                <div class="row">
+                    <div class="card data-card col-sm-12">
+                        <h3 class="data-header">List of Characters <a href="#charListing" rel="modal:open"><i class="fas fa-info"></i></a></h3>
+                        <div id="list"></div>
+                        <!--     <div> This has been commented out as my tablulate data function on charlist.js works well however not well enough for 
+                        appending 2nd child of each td with ${this()} to use that as a link to an external WIKIA-->
+              <!--      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   --->
+     <div class="chart col-sm-12" id="all-characters-div">
+        <h2>Comic Characters</h2>
+        <table id="all-characters"> </table>
+         <!---table next---->
+        <p class="text-center">Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span>.</p>
+        <div class="text-center">
+          <button id="info-prev" class="btn btn-primary border-white">Prev</button>
+          <button id="info-next" class="btn btn-primary border-white">Next</button>
+        </div>
+      </div>
+      
+      <div class="text-center">
+      <button class="text-white btn btn-danger mt-3 border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset All</button>
+    </div>
+      
+  
+    
+      
+      
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>     
+</body>
+</html>

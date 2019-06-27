@@ -1,0 +1,78 @@
+   /* Body */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+  /* Header */
+header h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffff00;
+    padding: 50px;
+    }
+.container-bgimg{
+    height: 360px;
+    width: 100%;
+}    
+.bgimg{
+    background: url("../images/bgimg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+    
+}  
+
+/*----------------------------------- Char list styling*/
+/*
+#list {
+    padding-left: 250px;
+}
+
+td,
+th {
+    padding: 1px 4px;
+    border: 1px solid black;
+    color: red;
+}
+
+td a {
+    text-decoration: none!important;
+    color: wheat!important;
+}
+
+td a:hover {
+    color: #debd97;
+}
+*/
+
+table {
+  text-align: left;
+  background-color: white;
+  border-collapse: separate;
+  border: 1px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+table th {
+  text-transform: uppercase;
+  font-family: "Cabin Sketch", cursive;
+  border: 0;
+  padding: 5px;
+}
+
+table td {
+  text-transform: capitalize;
+  border: 0;
+  padding: 5px;
+}
+
